@@ -4,32 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css">
-    <title>Calculate</title>
+    <title>Calculator</title>
   </head>
   <body>
-    <input class="js-input-a" type="number" />
-    <input class="js-input-b" type="number" />
-    <div class="container-number">
-      <button class="btn-number-one" value="1">1</button>
-      <button class="btn-number-two" value="2">2</button>
-      <button class="btn-number-three" value="3">3</button>
-      <button class="btn-number-four" value="4">4</button>
-      <button class="btn-number-five" value="5">5</button>
-      <button class="btn-number-six" value="6">6</button>
-      <button class="btn-number-seven" value="7">7</button>
-      <button class="btn-number-eight" value="8">8</button>
-      <button class="btn-number-nine" value="9">9</button>
-      <button class="btn-number-zero" value="0">0</button>
+    <div class="main-container">
+      <input class="input-field js-input-a" type="number" placeholder="Enter number" />
+      <input class="input-field js-input-b" type="number" placeholder="Enter number" />
+      <div class="calculator-grid">
+        <div class="button-grid">
+          <button class="btn-number" value="1">1</button>
+          <button class="btn-number" value="2">2</button>
+          <button class="btn-number" value="3">3</button>
+          <button class="btn-number" value="4">4</button>
+          <button class="btn-number" value="5">5</button>
+          <button class="btn-number" value="6">6</button>
+          <button class="btn-number" value="7">7</button>
+          <button class="btn-number" value="8">8</button>
+          <button class="btn-number" value="9">9</button>
+          <button class="btn-number" value="0">0</button>
+          <button class="btn-number" value=".">.</button>
+          <button class="btn-equals js-btn-result">=</button>
+        </div>
+        <div class="operation-grid">
+          <button class="btn-operation" value="+">+</button>
+          <button class="btn-operation" value="-">-</button>
+          <button class="btn-operation" value="*">*</button>
+          <button class="btn-operation" value="/">/</button>
+        </div>
+      </div>
+      <p class="output js-output"></p>
     </div>
-    <div class="container-operation">
-      <button class="btn-plus" value="+">+</button>
-      <button class="btn-minus" value="-">-</button>
-      <button class="btn-multiply" value="*">*</button>
-      <button class="btn-division" value="/">:</button>
-    </div>
-    <button class="js-btn-result">=</button>
-    <p class="js-output"></p>
-
     <script src="./math.js"></script>
     <script src="./calculator.js"></script>
     <script src="./index.js"></script>
